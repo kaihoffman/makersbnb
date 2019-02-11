@@ -17,8 +17,8 @@ Mockups for visuals are here: https://github.com/makersacademy/course/blob/maste
 
 # User stories #
 
-```As a user,
-so that I can use MakersBNB
+
+```As a user, so that I can use MakersBNB
 I want to be able to sign up to use MakersBnB```
 
 ```As a user,
