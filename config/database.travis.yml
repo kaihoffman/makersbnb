@@ -7,7 +7,7 @@ postgresql: &postgresql
 
 defaults: &defaults
   pool: 5
-  timeout: 5000
+  timeout: 5432
   host: localhost
   <<: *<%= ENV['DB'] || "postgresql" %>
 
