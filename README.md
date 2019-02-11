@@ -19,21 +19,32 @@ Mockups for visuals are here: https://github.com/makersacademy/course/blob/maste
 
 Back-end/Database: PostgreSQL
 
-Back-end/MVC: Ruby/Sinatra
+Back-end/MVC: Ruby on Rails
 
 Front-end: Javascript/HTML5/CSS
 
 Testing: RSpec, Capybara, Rubocop, ESLint, Jasmine
 
-Aim: 95%+ test coverage
+Aim: 95%+ test coverage, good team communication and having fun!
+
+**Installation**
+1. First, clone this repository
+2. Second, make sure you have Ruby 2.6 installed.
+3. In your terminal, run ```bundle install``` to download all gems.
+4. Make sure you have PostgreSQL installed (on a Mac, follow the instructions at https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb)
+5. edit ```config/database.yml``` to include your PostgreSQL username (on a mac, this defaults to your account name)
+6. Run the rakefile: ```rake db:create```
+7. Start the bad boy up! Run ```rails server```
+8. Navigate to http://localhost:3000 to view the site.
+
 
 **User stories**
 
-
+```
 As a user,
 so that I can use MakersBNB
 I want to be able to sign up to use MakersBnB
-
+```
 ```
 As a user,
 so that I can log in to MakersBnB
