@@ -15,14 +15,15 @@ Until a user has confirmed a booking request, that space can still be booked for
 
 Mockups for visuals are here: https://github.com/makersacademy/course/blob/master/makersbnb/makers_bnb_images/MakersBnB_mockups.pdf
 
+**User stories**
 
-As a user,
+```As a user,
 so that I can use MakersBNB
-I want to be able to sign up to use MakersBnB
+I want to be able to sign up to use MakersBnB```
 
-As a user,
+```As a user,
 so that I can log in to MakersBnB
-I want to be able to use my password to log in
+I want to be able to use my password to log in```
 
 As a user,
 so that I can list a new space,
