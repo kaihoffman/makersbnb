@@ -4,6 +4,7 @@ We would like a web application that allows users to list spaces they have avail
 
 
 **Headline specifications**
+
 Any signed-up user can list a new space.<br/>
 Users can list multiple spaces.<br/>
 Users should be able to name their space, provide a short description of the space, and a price per night.<br/>
