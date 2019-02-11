@@ -1,23 +1,16 @@
 language: ruby
 rvm:
- - 2.2
- - jruby
+ - 2.6
 
-services:
-  - postgresql
-
-  before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
-
-  test:
-  adapter: postgresql
-  database: travis_ci_test
-
-#If your local test setup uses different credentials or settings to access the
-#local test database, we recommend putting these settings in a database.yml.travis
-#in your repository and copying that over as part of your build:
-
-# adding the below to this .travis.yml file
-
-#before_script:
-#  - cp config/database.yml.travis config/database.yml
+env:
+  - DB=sqlite
+  - DB=mysql
+  - DB=postgresql
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rake
+before_script:
+  - cp config/database.travis.yml config/database.yml
+  - mysql -e 'create database strano_test'
+  - psql -c 'create database strano_test' -U postgres
