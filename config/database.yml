@@ -7,7 +7,7 @@ development:
   encoding: unicode
   database: makersbnb_dev
   pool: 5
-  username: ma141
+  username:
   host: localhost
   port: 5432
 
@@ -16,7 +16,7 @@ test:
   encoding: unicode
   database: makersbnb_test
   pool: 5
-  username: ma141
+  username: 
   host: localhost
   port: 5432
 
@@ -25,6 +25,6 @@ production:
   encoding: unicode
   pool: 5
   database: makersbnb
-  username: ma141
+  username:
   host: localhost
   port: 5432
