@@ -13,3 +13,4 @@ Any signed-up user can request to hire any space for one night, and this should 
 Nights for which a space has already been booked should not be available for users to book that space.<br/>
 Until a user has confirmed a booking request, that space can still be booked for that night.<br/>
 
+Mockups for visuals are here: https://github.com/makersacademy/course/blob/master/makersbnb/makers_bnb_images/MakersBnB_mockups.pdf
