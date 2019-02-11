@@ -1,0 +1,30 @@
+# Development is for utilising the database for development purposes but not the actual final product.
+# Test is for testing the app and in rails it will actually truncate the database automatically.
+
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: makersbnb_dev
+  pool: 5
+  username: ma141
+  host: localhost
+  port: 5432
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: makersbnb_test
+  pool: 5
+  username: ma141
+  host: localhost
+  port: 5432
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: makersbnb
+  username: ma141
+  host: localhost
+  port: 5432
