@@ -1,0 +1,19 @@
+- ./images folder will contain all pictures/images displayed on the page.
+- We'll have 2 pages (index and main).
+  - In index we'll show 2 tabs to choose from either signup or login.
+  - In main the user will have a menu to choose from what to do next, and it will show the latest listings added to the site, plus other options for their use.
+- Fields names for params:
+  - Index:
+    - Signup:
+      - full name: full_name
+      - username: user_name
+      - email address: email
+      - password 1: pswd1
+      - password 2: pswd2
+    - Login:
+      - username: user_name
+      - password: pswd
+
+  - Main:
+    - checkin date: check_in_date
+    - check out date: check_out_date

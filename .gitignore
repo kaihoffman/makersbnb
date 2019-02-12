@@ -1,0 +1,4 @@
+tmp/cache
+*/DS_Store
+Gemfile.lock
+*/development.log
