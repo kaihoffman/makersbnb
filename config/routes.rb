@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :users
   get 'makersbnb/index'
   get 'index/index'
   root 'makersbnb#index'
