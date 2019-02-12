@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input[name="check_in_date"], input[name="check_out_date"] {
+  margin-right: 20px;
+}
+
+form label {
+
+}
+
+form input {
+
+}
+
+.mainBodyDiv {
+  width: 90%;
+  height: 500px;
+  /* background-color: red; */
+  margin: auto;
+  position: relative;
+}
+
+.mainBodyDiv a {
+  color: blue;
+  display: block;
+  margin-top: 15px;
+}
+
+.mainBodyDiv a:visited {
+  color: blue;
+}
+
+.imgDiv {
+  width: 500px;
+  height: 100px;
+  /* background-color: blue; */
+  margin: auto;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.logo {
+  max-width: 500px;
+  max-height: 100px;
+}
+
+.mbLeft {
+  max-width: 130px;
+  min-width: 130px;
+  height: 400px;
+  /* background-color: yellow; */
+  position: absolute;
+  float: left;
+  padding-left: 10px;
+}
+
+.mbRight {
+  min-width: 400px;
+  height: 350px;
+  /* background-color: green; */
+  position: relative;
+  margin-left: 140px;
+}
+
+.formDiv {
+  text-align: center;
+  padding-top: 15px;
+  /* margin-right: 25px; */
+}
+
+.listingsSpan {
+  width: 300px;
+  height: 100px;
+  background-color: red;
+  margin: auto;
+  margin-top: 15px;
+}
