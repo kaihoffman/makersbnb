@@ -1,5 +1,8 @@
+<<<<<<< HEAD:app/views/css/index.css
 /* div { outline: 1px solid red !important; } */
 
+=======
+>>>>>>> 9578e9e81e4476d0fc63aaef12274b51e3957543:app/assets/stylesheets/index.css
 body {
   margin: 0;
   padding: 0;
@@ -31,19 +34,21 @@ label {
   max-height: 100px;
 }
 
+.entryContainer {
+  min-height: 700px;
+  min-width: 600px;
+  background-color: yellow;
+}
+
 .mainForm {
   /* background-color: red; */
   width: 70%;
-  height: 400px;
+  height: 1400px;
   margin: auto;
-  background-color: rgb(168,0,0);
-  border: black solid 5px;
-  border-radius: 0 45px 0 45px;
 }
 
 .formsContainer {
   position: relative;
-  color: white;
 }
 
 .signupDiv, .loginDiv {
@@ -109,29 +114,4 @@ label {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
-}
-
-/* End of tabs css */
-
-@media screen and (max-width: 750px) {
-  .mainBodyDiv {
-    width: 100%;
-    height: 500px;
-    /* background-color: red; */
-    margin: auto;
-  }
-
-  .imgDiv {
-    width: 100%;
-    height: 100px;
-    /* background-color: blue; */
-    /* margin: auto; */
-    text-align: center;
-    /* padding-bottom: 15px; */
-  }
-
-  .logo {
-    max-width: 500px;
-    max-height: 100px;
-  }
-}
+/* End of tabs css
