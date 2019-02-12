@@ -1,0 +1,2 @@
+module MakersbnbHelper
+end

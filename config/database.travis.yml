@@ -1,0 +1,21 @@
+postgresql: &postgresql
+  adapter: postgresql
+  username: postgres
+  password:
+  database: makersbnb_test
+  min_messages: ERROR
+
+defaults: &defaults
+  pool: 5
+  timeout: 5432
+  host: localhost
+  <<: *<%= ENV['DB'] || "postgresql" %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
