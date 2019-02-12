@@ -12,6 +12,10 @@
   </head>
   <body>
     <div class="mainBodyDiv">
+      <div class="imgDiv">
+        <img src="./images/mbnb.png"  class="logo"/>
+      </div>
+      <div class="menuDiv"><img src="./images/menu.png"  class="menuImg"/></div>
       <div class="mbLeft">
         <a href="#" id="lnkProfile">Profile</a>
         <a href="#" id="lnkManage">Manage your ads</a>
@@ -19,15 +23,12 @@
         <a href="#" id="lnkLogout">Log out</a>
       </div>
       <div class="mbRight">
-        <div class="imgDiv">
-          <img src="./images/mbnb.png"  class="logo"/>
-        </div>
         <div class="formDiv">
           <form action="#" method="post">
-            <label>Check in date: </label>
-            <input type="date" name="check_in_date" />
-            <label>Check out date: </label>
-            <input type="date" name="check_out_date" />
+            <div><label>Check in date: </label>
+            <input type="date" name="check_in_date" /></div>
+            <div><label>Check out date: </label>
+            <input type="date" name="check_out_date" /></div>
 
             <input type="submit" name="Submit" value="Check Available Listings" />
           </form>
@@ -54,6 +55,7 @@
           <div class="listingsSpan">
           </div>
           <div class="listingsSpan">
+          </div>
           <div class="listingsSpan">
           </div>
           <div class="listingsSpan">

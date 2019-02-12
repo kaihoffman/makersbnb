@@ -1,3 +1,5 @@
+/* div { outline: 1px solid red !important; } */
+
 body {
   margin: 0;
   padding: 0;
@@ -7,22 +9,13 @@ input[name="check_in_date"], input[name="check_out_date"] {
   margin-right: 20px;
 }
 
-form label {
-
-}
-
-form input {
-
-}
-
-
-
 .mainBodyDiv {
   width: 90%;
   height: 500px;
   /* background-color: red; */
   margin: auto;
   position: relative;
+  text-align: center;
 }
 
 .mainBodyDiv a {
@@ -36,12 +29,20 @@ form input {
 }
 
 .imgDiv {
-  width: 500px;
+  /* width: 500px; */
   height: 100px;
   /* background-color: blue; */
-  margin: auto;
+  margin-left: 140px;
   text-align: center;
   padding-bottom: 15px;
+}
+
+.menuDiv {
+  display: none;
+}
+
+.menuImg:hover {
+  cursor: pointer;
 }
 
 .logo {
@@ -50,8 +51,8 @@ form input {
 }
 
 .mbLeft {
-  max-width: 130px;
-  min-width: 130px;
+  width: 130px;
+  /* min-width: 130px; */
   /* background-color: yellow; */
   position: fixed;
   float: left;
@@ -82,25 +83,54 @@ form input {
 }
 
 @media screen and (max-width: 730px) {
-  .mainBodyDiv {
+  /* .mainBodyDiv {
     width: 100%;
-  }
-  .mbLeft{
-    /* visibility: hidden; */
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
+    background-color: yellow;
+  }*/
+
+  .menuDiv {
     display: block;
-    position: relative;
-    text-align: center;
-    margin-bottom: 15px;
   }
+
+  .menuImg {
+    max-width: 50px;
+  }
+
+  .mbLeft{
+    width: 100%;
+    /* visibility: hidden; */
+    /* max-width: 100%;*/
+    /* min-width: 100%; */
+    display: none;
+    position: relative;
+    /* text-align: center; */
+    /* background-color: yellow; */
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+    z-index: 10;
+    padding-top: 0px;
+  }
+
+  .mbRight{
+    z-index: 1;
+    /* background-color: blue; */
+    margin: 0 auto;
+    display: block;
+    /* margin-top: 140px; */
+    /* float: left; */
+  }
+
+  .imgDiv {
+    margin-left: 0px;
+  }
+  /*
   .mbRight {
     max-width: 100%;
     min-width: 100%;
-    width: 100%;
-    display: block;
-    position: relative;
-    background-color: blue;
-  }
+    width: 100%; */
+    /* display: block;
+    position: relative; */
+    /* background-color: blue; */
+  /* } */
 }
