@@ -33,7 +33,7 @@ Aim: 95%+ test coverage, good team communication and having fun!
 3. In your terminal, run ```bundle install``` to download all gems.
 4. Make sure you have PostgreSQL installed (on a Mac, follow the instructions at https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb)
 5. edit ```config/database.yml``` to include your PostgreSQL username (on a mac, this defaults to your account name)
-6. Run the rakefile: ```rake db:create```
+6. Run the rakefile: ```rake db:create``` and ```rake db:schema:load```
 7. Start the bad boy up! Run ```rails server```
 8. Navigate to http://localhost:3000 to view the site.
 
