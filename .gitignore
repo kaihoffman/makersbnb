@@ -1,4 +1,5 @@
-tmp/cache
-*/DS_Store
+/tmp
+*/.DS_Store
 Gemfile.lock
 */development.log
+*/server.pid
