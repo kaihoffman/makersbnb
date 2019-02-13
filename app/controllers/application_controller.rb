@@ -4,17 +4,17 @@ class ApplicationController < ActionController::Base
   end
 
   def main
-    render "makersbnb/main"
+    render "index/main"
   end
 
-  def signup
-    render "makersbnb/sign_up"
-  end
+  # def signup
+  #   render "makersbnb/main"
+  # end
 
   def create
     @new_user = User.new
     @new_user.add(params['user_name'], params['pswd1'], params['email'], params['full_name'])
-    redirect_to "makersbnb/main"
+    redirect_to "/main"
   end
 
 end
