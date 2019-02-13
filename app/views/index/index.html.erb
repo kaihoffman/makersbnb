@@ -3,8 +3,8 @@
   <head>    <!-- javascript -->
 
     <!-- jQuery -->
-    <script type="text/javascript" src="./jQuery/jquery-3.3.1.min.js">
-    </script>
+
+
     <script src="assets/index.js"></script>
   </head>
   <body>
@@ -20,14 +20,14 @@
         <div class="formsContainer">
           <div class="signupDiv">
             <h3>Join Makers B&B</h3>
-              <form action="" method="post">
+              <%= form_tag '/sign-up', method: :post do %>
                 <label>Full name: <input type="text" placeholder="Your name!" name="full_name"></label>
                 <label>Username: <input type="text" placeholder="Username?" name="user_name"></label>
                 <label>email address: <input type="text" placeholder="email?" name="email"></label>
                 <label>Type a password: <input type="password" placeholder="8 minimum" name="pswd1"></label>
                 <label>Retype your password: <input type="password" name="pswd2"></label>
                 <input type="submit" value="Signup">
-              </form>
+              <% end %>
           </div>
           <div class="loginDiv">
               <form action="" method="post">
