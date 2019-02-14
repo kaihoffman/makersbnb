@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
     new_user = @new_user.add(params['user_name'], params['pswd1'], params['email'], params['full_name'])
 
     if new_user.errors.any?
-      redirect_to "/"
+      redirect_to "/", :flash => { :error => 'User already exists'}
     else
       redirect_to "/main"
     end
