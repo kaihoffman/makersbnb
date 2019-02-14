@@ -1,0 +1,115 @@
+/* div { outline: 1px solid red !important; } */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input[name="check_in_date"], input[name="check_out_date"] {
+  margin-right: 20px;
+}
+
+.mainBodyDiv {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+.mainBodyDiv a {
+  color: blue;
+  display: block;
+  margin-top: 15px;
+  margin-left: 140;
+}
+
+.mainBodyDiv a:visited {
+  color: blue;
+}
+
+.imgDiv {
+  width: 90%;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  padding-bottom: 15px;
+  float: right;
+}
+
+.menuDiv {
+  display: none;
+}
+
+.menuImg:hover {
+  cursor: pointer;
+}
+
+.logo {
+  max-width: 500px;
+  max-height: 100px;
+}
+
+.mbLeft {
+  display: block;
+  width: 130px;
+  position: fixed;
+  float: left;
+  padding-left: 5px;
+  padding-top: 100px;
+}
+
+.mbRight {
+  min-width: 400px;
+  height: 350px;
+  position: relative;
+  margin-left: 140px;
+}
+
+.formDiv {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.listingsSpan {
+  width: 300px;
+  height: 100px;
+  background-color:  rgb(168,0,0);
+  border: black solid 5px;
+  border-radius: 0 45px 0 45px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 730px) {
+
+  .menuDiv {
+    display: block;
+  }
+
+  .menuImg {
+    max-width: 50px;
+  }
+
+  .mbLeft{
+    width: 100%;
+    display: none;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+    z-index: 10;
+    padding-top: 0px;
+  }
+
+  .mbRight{
+    z-index: 1;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .imgDiv {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
