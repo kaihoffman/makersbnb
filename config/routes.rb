@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'application#index'
   get '/main' => 'application#main'
   post '/sign-up' => 'application#create'
+  post '/login' => 'application#login'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
 

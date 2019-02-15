@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::Base
+
+  @@user
+
   def index
     render "index/index"
   end
@@ -6,10 +9,6 @@ class ApplicationController < ActionController::Base
   def main
     render "index/main"
   end
-
-  # def signup
-  #   render "makersbnb/main"
-  # end
 
   def create
 
@@ -21,6 +20,19 @@ class ApplicationController < ActionController::Base
       redirect_to "/"
     else
       redirect_to "/main"
+    end
+  end
+
+  def login
+    user = User.new
+    login_user = user.login(params['user_name'], params['pswd'])
+
+    if login_user
+      current_user = user.find_user(params['user_name'])
+      @@user = current_user.id
+      redirect_to '/main'
+    else
+      redirect_to '/'
     end
   end
 

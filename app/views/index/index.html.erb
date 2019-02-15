@@ -29,12 +29,12 @@
               <% end %>
           </div>
           <div class="loginDiv">
-              <form action="" method="post">
+              <%= form_tag '/login', method: :post do %>
               <h3>Back to your account</h3>
               <label>Username: <input type="text" placeholder="Username?" name="user_name"></label>
               <label>Password: <input type="password" placeholder="password" name="pswd"></label>
               <input type="submit" value="Login">
-            </form>
+            <% end %>
           </div>
         </div>
       </div>
